@@ -1,0 +1,20 @@
+Hola Juan!
+tenés que implementar la funcionalidad extra que detallo, usando tus TPs de base.
+Se entrega el 18/12
+
+-Flappy Bird: (Al menos 1)
+1- Que existan más de dos powerup/obstáculo con diferente lógica (cambio de tamaño, velocidad, etc). Todos deben tener animación
+2- Que se pueda elegir al inicio temática y en base a eso cambie: fondo, personajes, etc.
+
+-Peg Solitaire: (Al menos 3)
+1-Que se pueda elegir la temática del juego. (ficha, estilo de tablero, etc)
+2-Que se permita elegir entre distintos tableros (una cruz más grande, un cuadrado, etc)
+3-Que pueda usarse una ayuda, por ejemplo: Deshacer último movimiento, elegís una ficha y te deja soltarla en cualquier lado sin comer, etc.
+4-Que tenga temporizador y si no lo resolvés en menos de ese tiempo, perdés
+5-Que tenga Modo "desafío", estilo los juegos de ajedrez. Elegís un desafío (que básicamente es un estado de tablero con N fichas) y lo tenés que resolver. 
+
+-Blocka: (Al menos 3)
+1-Que se pueda elegir el tamaño de la blocka (2x2, 3x3, etc)
+2-Que tenga sonido acorde a la jugabilidad. (por ejemplo un sonido cuando parte de la blocka quede ubicada bien y otro cuando quede ubicada mal, etc)
+3-Ayudas: Mientras se está jugando, aparece la blocka original como referencia 2 segs y se va, el sistema ubica automáticamente una parte de la blocka, desactiva el filtro para una o más partes de la Blocka, etc. Asociar la ayuda a algo: un botón, pero que tenga cierto sentido: luego de X puntaje, etc
+4-Que haya temáticas (juegos, autos, moda, arte) y puedas elegir con qué temática jugar.

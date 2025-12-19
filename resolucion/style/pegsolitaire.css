@@ -1,0 +1,222 @@
+ /* Estilos para Peg Solitaire, siguiendo el formato de Blocka */
+#pegsolitaire-menu{
+    min-height: 580px;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--Background-Color-Dark);
+    background-image: url(../media/ChatGPT\ Image\ 16\ sept\ 2025\,\ 10_05_29\ p.m..png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 0 1.5em 1.5em;
+    box-shadow: 0 4px 24px var(--Primary-Color-Dark, #2D8A81);
+    padding: 0;
+    margin: 0 auto;
+}
+
+.pegsolitaire-menu__container {
+  background: #1a1536;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(132, 233, 221, 0.10);
+  padding: 40px 32px 32px 32px;
+  margin: 40px auto 24px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.pegsolitaire-menu__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 12px #84E9DD33;
+}
+
+.pegsolitaire-menu__subtitle {
+  font-size: 1.2rem;
+  color: #cfcfff;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.btn-main.pegsolitaire-menu__play {
+  background: linear-gradient(90deg, #84E9DD 0%, #8F6FE6 100%);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 40px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(132, 233, 221, 0.15);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.btn-main.pegsolitaire-menu__play:hover {
+  background: linear-gradient(90deg, #8F6FE6 0%, #84E9DD 100%);
+  transform: scale(1.05);
+}
+
+.pegsolitaire-menu__options--row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.btn-secondary.pegsolitaire-menu {
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+#pegsolitaire-howto-btn {
+  background: #ff4fcf;
+  color: #fff;
+  box-shadow: 0 2px 8px #ff4fcf33;
+}
+
+#pegsolitaire-howto-btn:hover {
+  background: #e03bb2;
+  transform: scale(1.05);
+}
+
+
+#pegsolitaire-gamemode-btn {
+  background: #417ddd;
+  color: #fff;
+  box-shadow: 0 2px 8px #76aed533;
+}
+
+#pegsolitaire-gamemode-btn:hover {
+  background: #2c60b3;
+  transform: scale(1.05);
+}
+
+
+#pegsolitaire-style-btn {
+  background: #44e168;
+  color: #fff;
+  box-shadow: 0 2px 8px #4fff8d33;
+}
+
+#pegsolitaire-style-btn:hover {
+  background: #38b755;
+  transform: scale(1.05);
+}
+
+/* Modals */
+
+.pegsolitaire-menu-modal {
+  display: block;
+  background: none;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.pegsolitaire-menu-modal__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+  background: #221a3a;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px #84E9DD22;
+  padding: 32px 24px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pegsolitaire-menu-modal__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.pegsolitaire-menu-modal__animation {
+  margin-bottom: 18px;
+}
+.pegsolitaire-menu-modal__desc {
+  color: #cfcfff;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+.pegsolitaire-menu-modal__close {
+  display: none;
+}
+
+.pegsolitaire-option {
+  width: fit-content;
+  margin: 6px;
+}
+
+.pegsolitaire-option__button {
+  background: #2a2050;
+  border: 2px solid #3a305a;
+  border-radius: 16px;
+  padding: 16px;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.pegsolitaire-option__button:hover, .pegsolitaire-option__button.selected {
+  border-color: #84E9DD;
+  box-shadow: 0 0 20px rgba(132, 233, 221, 0.4),
+              0 0 40px rgba(132, 233, 221, 0.2),
+              inset 0 0 20px rgba(132, 233, 221, 0.1);
+  transform: translateY(-4px);
+}
+
+.pegsolitaire-option__button:active {
+  transform: translateY(1px);
+  transition: cubic-bezier(1, 0, 0, 1);
+}
+
+.pegsolitaire-option__image img {
+  width: 150px;
+  height: 150px;
+}
+
+
+/* Canvas */
+#pegsolitaire-canvas {
+  display: block;
+  margin: 32px auto 0 auto;
+  background: #f8f8fc;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(132,233,221,0.10);
+}
+
+@media (max-width: 700px) {
+  .pegsolitaire-menu__container {
+    padding: 24px 8px;
+    max-width: 98vw;
+  }
+  .pegsolitaire-menu-modal__content {
+    padding: 18px 4px;
+    max-width: 98vw;
+  }
+  #pegsolitaire-canvas {
+    width: 98vw !important;
+    height: 60vw !important;
+  }
+}
